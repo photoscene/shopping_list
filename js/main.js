@@ -9,8 +9,8 @@ $(document).ready(function(){
         {
         var value = $(this).val();
         var addListItem = $('<div class="list-row">'
-                +'<input type="checkbox" class="css-checkbox css-label css-checkbox:checked">'
-                +'<label class="css-label"></label>'
+                +'<input type="checkbox" style="float: left; margin-right: 20px; margin-top: 10px;">'
+                +'<label></label>'
                 +'<button class="trash"></button>'
                 +'<div class="list-tag">' +value+ '</div>'
                 +'<button class="pipe"></button>'
@@ -25,8 +25,8 @@ $(document).ready(function(){
     $('.btn').click(function(){
         var value = $('.add-item').val();
         var addListItem = $('<div class="list-row">'
-                +'<input type="checkbox" class="css-checkbox css-label">'
-                +'<label class="css-label"></label>'
+                +'<input type="checkbox" style="float: left; margin-right: 20px; margin-top: 10px;">'
+                +'<label></label>'
                 +'<button class="trash"></button>'
                 +'<div class="list-tag">' +value+ '</div>'
                 +'<button class="pipe"></button>'
