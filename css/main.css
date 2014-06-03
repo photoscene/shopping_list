@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Days;
+    src: url("../fonts/Days.otf");
+}
+
+body {
+    background-image: url(../img/bg_big.jpg);
+    background-attachment: fixed;
+    margin: 0;
+    /*overflow: hidden;*/
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+    background-color: #e8e8e8;
+    border-bottom: 10px solid #c2c2c2;
+    padding-top: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.header-content {
+    width: 970px;
+    margin: 0 auto;
+}
+
+.help {
+    max-width: 970px;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+}
+
+.how-works {
+    width: 25%;
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    font-family: Days;
+    color: #b3a68a;
+    font-size: 25px;
+    line-height: 100px;
+    padding-top: 40px;
+    border: none;
+}
+
+.how-works:hover {
+    background-color: #c2c2c2;
+    color: white;
+}
+
+.big-input {
+    width: 970px;
+    padding: 50px 0px;
+    /*background-color: white;*/
+    margin: 0 auto;
+    float: none;
+}
+
+.add-item {
+    height: 70px;
+    min-width: 890px;
+    border: 0px;
+    background-color: white;
+    text-align: center;
+    font-family: Days;
+    font-size: 25px;
+    color: #d2d2d2;
+    position: relative;
+    top: 50%;
+    transform: translateY(-1%);
+}
+
+.list {
+    width: 970px;
+    height: auto;
+    font-family: Days;
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.list-row{
+    width: 935px;
+    float: left;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.trash{
+	float: left;
+	width: 37px;
+	background-image: url('../img/trash.png');
+	background-repeat: no-repeat;
+	height: 40px;
+        background-color: transparent;
+        border: none;
+}
+
+.list-tag {
+	float: left;
+	max-width: 640px;
+	color: white;
+	font-family: Days;
+	font-size: 25px;
+	padding-left: 40px;
+}
+
+.pipe {
+	float: right;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/pipe.png');
+	height: 40px;
+        background-color: transparent;
+        border: none;
+}
+
+.selected {
+	float: right;
+	width: 50px;
+	height: 50px;
+	background-image: url('../img/selected.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        display: none;
+}
+
+.item-selected {
+    opacity: 0.5;
+} 
+
+.select-all {
+    width: auto;
+    height: 50px;
+    background-color: #aace54;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+    color: white;
+    padding: 5px 35px;
+}
+
+.delete {
+    width: auto;
+    height: 50px;
+    background-color: #aace54;
+    border: none;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
+    padding: 5px 35px;
+}
+
+.functions {
+    float: none;
+    margin: 0 auto;
+}
+
+.popup-help {
+    width: 550px;
+    height: auto;
+    /*border-radius: 30px;*/
+    background-color: white;
+    /*opacity: 0.7;*/
+    float: none;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+} 
+
+h1 {
+    font-family: Days;
+    font-size: 40px;
+    color: #3a3a3a;
+    line-height: 4em;
+}
+
+p {
+	
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 0px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-10%);
+}
+
+.col-lg-12 {
+    font-family: Days;
+    font-size: 25px;
+    color: white;
+}
+
+.popup-help ul{
+    font-family: Days;
+    font-size: 15px;
+    color: #c2c2c2;
+    padding: 15px 30px 15px 30px;
+}
+
+.popup-help li{
+    padding: 10px 10px;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+    float: left;
+}
+
+.check-items {
+    width: 35px;
+    height: 35px;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:20px;
+    height:17px; 
+    display:inline-block;
+    line-height:17px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:15px;
+    vertical-align:middle;
+    cursor:pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(70%);
+    float: left; 
+    padding-right: 20px;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -17px;
+}
+
+.css-label{ background-image:url(http://csscheckbox.com/checkboxes/elegant.png); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
