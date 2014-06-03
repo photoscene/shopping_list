@@ -9,7 +9,7 @@ $(document).ready(function(){
         {
         var value = $(this).val();
         var addListItem = $('<div class="list-row">'
-                +'<input type="checkbox" style="float: left; margin-right: 20px; margin-top: 10px;">'
+                +'<input type="checkbox" class="check-items" style="float: left; margin-right: 20px; margin-top: 10px;">'
                 +'<label></label>'
                 +'<button class="trash"></button>'
                 +'<div class="list-tag">' +value+ '</div>'
@@ -25,8 +25,8 @@ $(document).ready(function(){
     $('.btn').click(function(){
         var value = $('.add-item').val();
         var addListItem = $('<div class="list-row">'
-                +'<input type="checkbox" style="float: left; margin-right: 20px; margin-top: 10px;">'
-                +'<label></label>'
+                +'<input type="checkbox" class="check-items" style="float: left; margin-right: 20px; margin-top: 10px;">'
+                //+'<label></label>'
                 +'<button class="trash"></button>'
                 +'<div class="list-tag">' +value+ '</div>'
                 +'<button class="pipe"></button>'
@@ -48,6 +48,20 @@ $(document).ready(function(){
         $(this).closest('.list-row').append(selected).show().addClass('item-selected');
         //$(this).remove();
     });
+    
+    //select all function
+    $('.select-all').click(function(){
+        if(this.checked){
+            $('.check-items').each(function(){
+                this.checked = true;
+        });}
+        else{
+            $('.check-items').each(function(){
+                this.checked = false;
+                });
+            }
+            
+        });
     
     //drag items
      $(function() {
